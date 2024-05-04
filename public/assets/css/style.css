@@ -1,0 +1,250 @@
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+/******************preloader************************/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black; 
+  z-index: 9999; }
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 4px solid teal; 
+  animation: pulse 1.5s ease-in-out infinite; 
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(0.8); 
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1); 
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.8); 
+  }
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 15px 0;
+}
+.icon-box{
+  color:white;
+}
+.icon-box h4{
+  color: black;
+}
+#header.header-scrolled,
+#header.header-inner-pages {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#header .logo {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.logo a img{
+  width: 80px;
+  height: 100px;
+  
+  
+}
+#header .logo a {
+  color: #fff;
+}
+
+#header .logo a span {
+  color: teal;
+}
+
+#header .logo img {
+  max-height: 40px;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: teal;
+}
+
+/* Mobile View */
+@media screen and (max-width: 991px) {
+  #header {
+    padding: 10px 0; 
+  }
+
+  #header .logo {
+    font-size: 24px;
+  }
+
+  .navbar ul li a{
+ 
+    font-size: 12px;
+  }
+  .navbar li {
+    margin-bottom: 10px; 
+    
+  }
+
+  .navbar a,
+  .navbar a:focus {
+    padding: 10px 15px; 
+    font-size: 14px; 
+  }
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/hero-bg.jpg") top center;
+  background-size: cover;
+  position: relative;
+}
+
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero .container {
+  position: relative;
+  padding-top: 74px;
+  text-align: center;
+}
+
+#hero h1 {
+  margin: 0;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
+  color: #fff;
+}
+
+
+#hero a.btn {
+  margin-right: 10px;
+}
+.hero-content p{
+   padding: 25px;
+   line-height: 30px;
+   font-size: 20px;
+   color: teal;
+}
+.hero-content a{
+  padding: 13px;
+  margin:10px;
+}
+.explore{
+  background-color:teal;
+  color:white;
+}
+
+.hero-para,
+.hero-para a {
+  color: #333; 
+}
+@media screen and (max-width: 800px) {
+  #hero {
+    height: auto;
+    padding-top: 50px; }
+  
+  #hero .container {
+    padding-top: 50px; 
+  }
+
+  .hero-greet{
+    font-size: 35px; 
+    line-height: 42px;
+  }
+
+  #hero p {
+    font-size: 16px; 
+  }
+}
+
+
+
+
