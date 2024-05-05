@@ -276,6 +276,12 @@ img.modal-img {
     
     background-color: rgb(230, 228, 225);
 }
+.why-quote{
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
 .why-tag {
     text-align: center;
     font-size: 28px;
@@ -354,7 +360,7 @@ img.modal-img {
     color: #121518;
     font-size: 16px;
     line-height: 40px;
-    border: 1px solid grey;
+    border: 1px solid white;
     transition: .5s;
 }
 
@@ -641,4 +647,12 @@ img.modal-img {
     .contactform {
         flex-basis: 100%;
     }
+    .project-para {
+    
+        text-align: center;
+        color: black;
+        font-size: 25px;
+        margin-bottom: 50px;
+   
+  }
 }
