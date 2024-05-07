@@ -171,17 +171,14 @@
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-#hero {
+#home {
+  position: relative;
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
-  background-size: cover;
-  position: relative;
 }
-
-#hero:before {
+#home:before {
   content: "";
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0,0.5);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -189,13 +186,13 @@
   right: 0;
 }
 
-#hero .container {
+#home .container {
   position: relative;
   padding-top: 74px;
   text-align: center;
 }
 
-#hero h1 {
+#home h1 {
   margin: 0;
   font-size: 56px;
   font-weight: 700;
@@ -203,8 +200,10 @@
   color: #fff;
 }
 
-
-#hero a.btn {
+.hero-greet{
+  white-space: nowrap;
+}
+#home a.btn {
   margin-right: 10px;
 }
 .hero-content p{
@@ -226,25 +225,38 @@
 .hero-para a {
   color: #333; 
 }
-@media screen and (max-width: 800px) {
-  #hero {
-    height: auto;
-    padding-top: 50px; }
-  
-  #hero .container {
-    padding-top: 50px; 
-  }
+.motion-effect {
+  display: inline-block;
+  position: relative;
+  animation: moveLetters 1s forwards;
+  opacity: 0;
+}
 
-  .hero-greet{
-    font-size: 35px; 
-    line-height: 42px;
+@keyframes moveLetters {
+  0% {
+      transform: translateY(-20px);
+      opacity: 0;
   }
-
-  #hero p {
-    font-size: 16px; 
+  100% {
+      transform: translateY(0);
+      opacity: 1;
   }
 }
 
+@media screen and (max-width: 800px) {
+  #home {
+    height: auto;
+    padding-top: 50px; 
+  }
+  
+  #home .container {
+    padding-top: 50px; 
+  }
 
-
-
+ .hero-greet{
+  white-space: normal;
+ }
+  #home p {
+    font-size: 16px; 
+  }
+}
