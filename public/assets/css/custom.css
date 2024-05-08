@@ -1,32 +1,35 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap");
 /********************************************** ABOUT section********************/
 
 .about-tag {
+    font-family: "Playfair Display SC", serif;
     text-align: center;
-    font-size: 28px;
     font-weight: bold;
-    color: teal; 
+    color: rgb(11, 163, 163);
     margin-bottom: 30px;
-    position: relative;}
+    position: relative;
+    font-size: 2rem;
+  
+}
 .about-tag::after {
     content: '';
     position: absolute;
     bottom: -5px; 
     left: 50%; 
     transform: translateX(-50%);
-    width: 15%; 
+    width: 14%; 
     height: 3px; 
-    background-color: teal; 
+    background-color: #ccc;
 }
-      
+.about{
+    background-color: rgb(230, 228, 225);
+}    
 .about-section {
     padding: 60px 0; 
     
    
 }
-.about{
-    background-color: rgb(230, 228, 225);
-}
+
 .about-quote{
     text-align: center;
     color: black;
@@ -59,8 +62,7 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
     display: block; 
     margin: 0 auto; }
-
-
+  
 /************************************ ABOUT section end***********************************************/
 /******************************************Service**************************************************/
 
@@ -69,21 +71,22 @@
 }
 
 .service-tag {
+    font-family: "Playfair Display SC", serif;
     text-align: center;
-    font-size: 28px;
     font-weight: bold;
-    color: teal; 
+    color: rgb(11, 163, 163);
     margin-bottom: 30px;
-    position: relative;}
+    position: relative;
+    font-size: 2rem;}
 .service-tag::after {
     content: '';
     position: absolute;
     bottom: -5px; 
     left: 50%; 
     transform: translateX(-50%);
-    width: 10%; 
+    width: 9%; 
     height: 3px; 
-    background-color: teal; 
+    background-color: #ccc;
 }
     
 .service-quote{
@@ -96,9 +99,10 @@
 .service-item {
     text-align: center;
     padding: 20px;
-    background-color: white;
+    background-color: rgba(0, 0, 0);
     margin-bottom: 30px;
     border-radius: 10px;
+    border: 3px solid rgb(11, 163, 163);
     transition: transform 0.3s ease-in-out;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     height: 400px; /* Set a fixed height for the service items */
@@ -117,36 +121,40 @@
     max-height: 200px;
     object-fit: cover;
     border-radius: 10px;
-    border: 1px solid teal;
+    
     margin-bottom: 20px;
 }
 
 .service-item h3 {
     font-size: 24px;
     margin-bottom: 10px;
+    color: rgb(11, 163, 163);
 }
 
 .service-item p {
     font-size: 18px;
-    color: black;
+    color: white;
     margin-bottom: 0;
 }
-
+.service-item .fas{
+    color:#fff;
+    
+}
 /*********************Service End*********************************/
 /*********************Project Start*******************************/
 
-
-  .projects {
+.projects {
     padding: 80px 0;
   }
   
   .project-tag {
+    font-family: "Playfair Display SC", serif;
     text-align: center;
-    font-size: 28px;
     font-weight: bold;
-    color: teal; 
+    color: rgb(11, 163, 163);
     margin-bottom: 30px;
-    position: relative;}
+    position: relative;
+    font-size: 2rem;}
 .project-tag::after {
     content: '';
     position: absolute;
@@ -155,22 +163,22 @@
     transform: translateX(-50%);
     width: 15%; 
     height: 3px; 
-    background-color: teal; 
+    background-color: #ccc;
 }
+.project-para {
     
-  .project-para {
-    
-        text-align: center;
-        color: black;
-        font-size: 25px;
-        margin-bottom: 50px;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    margin-bottom: 50px;
    
   }
   
   .project-item {
     overflow: hidden;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(0,0,0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
     transition: transform 0.3s ease-in-out;
     margin-bottom: 30px;
     height: 300px;
@@ -188,7 +196,7 @@
   }
   
   .project-item:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
   }
   
   @media (max-width: 768px) {
@@ -224,14 +232,15 @@
 .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
+    width: 100%;
+    height: 100%;
     max-width: 700px;
 }
 
 img.modal-img {
     margin: auto;
     display: block;
-    max-width: 100%;
+    max-width: 50%;
     height: 10%;
 }
 
@@ -246,10 +255,17 @@ img.modal-img {
 }
 
 .close:hover, .close:focus {
-    color: #bbb;
+    color: white;
     text-decoration: none;
     cursor: pointer;
 }
+  
+  
+
+
+
+
+
 
 
 
@@ -273,21 +289,22 @@ img.modal-img {
     margin-bottom: 50px;
 }
 .why-tag {
+    font-family: "Playfair Display SC", serif;
     text-align: center;
-    font-size: 28px;
     font-weight: bold;
-    color: teal; 
+    color: rgb(11, 163, 163);
     margin-bottom: 30px;
-    position: relative;}
+    position: relative;
+    font-size: 2rem;}
 .why-tag::after {
     content: '';
     position: absolute;
     bottom: -5px; 
     left: 50%; 
     transform: translateX(-50%);
-    width: 15%; 
+    width: 11%; 
     height: 3px; 
-    background-color: teal; 
+    background-color: #ccc;
 }
     
 .why .row {
@@ -301,7 +318,7 @@ img.modal-img {
     height: 100%;
     top: 0;
     left: calc(50% - .5px);
-    background: teal;
+    background:rgb(11, 163, 163);
 }
 
 .why #accordion-1 {
@@ -347,25 +364,28 @@ img.modal-img {
     display: block;
     padding: 10px 25px;
     width: 100%;
+    justify-content: center;
+    text-align: center;
     color: #121518;
     font-size: 16px;
     line-height: 40px;
     border: 1px solid white;
     transition: .5s;
 }
+
 .why .fas{
     padding-right: 20px;
     font-size: 25px;
 }
 .why .card-header [data-toggle="collapse"][aria-expanded="true"] {
-    background: teal;
+    background: rgb(11, 163, 163);
 }
 
 .why .card-header [data-toggle="collapse"]:after {
     font-family: 'font Awesome 5 Free';
     content: "\f067";
     float: right;
-    color: teal;
+    color: rgb(11, 163, 163);
     font-size: 12px;
     font-weight: 900;
     transition: .5s;
@@ -423,21 +443,22 @@ img.modal-img {
 }
 
 .contact-tag {
+    font-family: "Playfair Display SC", serif;
     text-align: center;
-    font-size: 28px;
     font-weight: bold;
-    color: teal; 
+    color: rgb(11, 163, 163);
     margin-bottom: 30px;
-    position: relative;}
+    position: relative;
+    font-size: 2rem;}
 .contact-tag::after {
     content: '';
     position: absolute;
     bottom: -5px; 
     left: 50%; 
     transform: translateX(-50%);
-    width: 15%; 
+    width: 18%; 
     height: 2px; 
-    background-color: teal; 
+    background-color:#ccc;
 }
     
 .contact .content p {
@@ -485,7 +506,7 @@ img.modal-img {
 
 .contactinfo .text h3 {
     font-weight: 500;
-    color: teal;
+    color: rgb(11, 163, 163);
 }
 
 .contactform {
@@ -531,12 +552,12 @@ img.modal-img {
 .contactform .inputBox textarea:valid ~ span {
     transform: translateY(-20px);
     font-size: 12px;
-    color: #00bcd4;
+    color: rgb(11, 163, 163);
 }
 
 .contactform .inputBox input[type="submit"] {
     width: 100%;
-    background: teal;
+    background: rgb(11, 163, 163);
     color: #fff;
     border: none;
     cursor: pointer;
@@ -547,7 +568,7 @@ img.modal-img {
 .contactform .inputBox input:focus,
 .contactform .inputBox textarea:focus {
     outline: none;
-    border-color: teal;
+    border-color: rgb(11, 163, 163);
     box-shadow: none;
 }
 
@@ -572,7 +593,7 @@ img.modal-img {
 }
 
 .footer h4 {
-    color: #fff;
+    color: rgb(11, 163, 163);
 }
 
 .footer p {

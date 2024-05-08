@@ -1,4 +1,4 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -83,7 +83,7 @@
 }
 
 #header .logo a span {
-  color: teal;
+  color: rgb(11, 163, 163);
 }
 
 #header .logo img {
@@ -118,7 +118,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 600;
   color: #fff;
   white-space: nowrap;
@@ -136,7 +136,7 @@
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: teal;
+  color: rgb(11, 163, 163);
 }
 
 /* Mobile View */
@@ -202,6 +202,7 @@
 
 .hero-greet{
   white-space: nowrap;
+ 
 }
 #home a.btn {
   margin-right: 10px;
@@ -210,14 +211,14 @@
    padding: 25px;
    line-height: 30px;
    font-size: 20px;
-   color: teal;
+ 
 }
 .hero-content a{
   padding: 13px;
   margin:10px;
 }
 .explore{
-  background-color:teal;
+  background: rgb(11, 163, 163);
   color:white;
 }
 
@@ -260,3 +261,26 @@
     font-size: 16px; 
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
