@@ -192,16 +192,16 @@
   text-align: center;
 }
 
-#home h1 {
-  margin: 0;
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 64px;
-  color: #fff;
-}
+
 
 .hero-greet{
+  margin: 0;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 64px;
   white-space: nowrap;
+  color: white;
+  font-family: "Playfair Display SC", serif;
  
 }
 #home a.btn {
@@ -225,12 +225,6 @@
 .hero-para,
 .hero-para a {
   color: #333; 
-}
-.motion-effect {
-  display: inline-block;
-  position: relative;
-  animation: moveLetters 1s forwards;
-  opacity: 0;
 }
 
 @keyframes moveLetters {

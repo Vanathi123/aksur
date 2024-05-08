@@ -104,8 +104,8 @@
     border-radius: 10px;
     border: 3px solid rgb(11, 163, 163);
     transition: transform 0.3s ease-in-out;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    height: 400px; /* Set a fixed height for the service items */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+    height: 400px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -219,7 +219,7 @@
     display: none;
     position: fixed;
     z-index: 9999;
-    padding-top: 100px;
+    
     left: 0;
     top: 0;
     width: 100%;
@@ -244,23 +244,24 @@ img.modal-img {
     height: 10%;
 }
 
+  
 .close {
     position: absolute;
     top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
+    right: 50px; 
+    color: white;
+    font-size: 54px; 
     font-weight: bold;
     transition: 0.3s;
+    z-index: 99999; 
 }
 
 .close:hover, .close:focus {
-    color: white;
+    color: grey;
     text-decoration: none;
     cursor: pointer;
 }
-  
-  
+
 
 
 
@@ -425,7 +426,7 @@ img.modal-img {
     background-image: url('assets/img/cta-bg.jpg');
     background-size: cover;
     color: #fff;
-    min-height: 80vh; /* Reduce the minimum height */
+    min-height: 80vh; 
 }
 
   .contact:before {
@@ -464,7 +465,8 @@ img.modal-img {
 .contact .content p {
     font-weight: 300;
     margin-bottom: 20px; 
-    color: #fff;
+    color: white;
+    
 }
 
 .contact-container {
@@ -633,17 +635,29 @@ img.modal-img {
 /***********************************footer*********************************************************************/
 
 @media screen and (max-width: 767px) {
+    .close{
+        color:white
+    }
+    .close:hover{
+        color: black;
+    }
     .services .service-item {
         height: auto;
     }
     .about-content{
         margin-top: 20px;
     }
-    .service-tag::after,.about-tag::after ,.why-tag::after,.project-tag::after{
+    .service-tag::after ,.why-tag::after{
         width:25%;
     }
     .contact-tag::after{
-        width:30%;
+        width:40%;
+    }
+    .about-tag::after{
+        width: 28%;
+    }
+    .project-tag::after{
+        width:20%;
     }
     .why .row::after {
         display: none;
